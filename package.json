@@ -1,5 +1,5 @@
 {
-  "name": "brick-ball-shaadi",
+  "name": "akhil",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -26,6 +26,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.20",
+    "webpack": "5.40.0"
   }
 }

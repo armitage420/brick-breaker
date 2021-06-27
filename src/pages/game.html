@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Game | Brick Breaker</title>
+  </head>
+
+  <style>
+    body {
+      background: url(https://static.vecteezy.com/system/resources/previews/000/095/572/non_2x/vector-dark-wallpaper-design.jpg)
+        no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      align-items: stretch;
+      color: #ebefff;
+    }
+    .game {
+      flex-grow: 0.98;
+      max-height: 100%;
+      margin: 20px;
+    }
+    .options {
+      flex-grow: 0.02;
+      margin: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .pause img {
+      height: 30px;
+      cursor: pointer;
+    }
+    .pause img:hover {
+      opacity: 0.6;
+    }
+    .options {
+      font-size: 24px;
+    }
+    .game {
+      display: flex;
+      align-items: center;
+    }
+    canvas {
+      vertical-align: top;
+      box-shadow: inset 0px 0px 10px #0d52db;
+      /* filter: drop-shadow(0px 0px 10px #0d52db); */
+      border-radius: 20px;
+      background: none;
+    }
+  </style>
+  <body>
+    <div class="game" id="game">
+      <canvas id="myCanvas"></canvas>
+    </div>
+    <div class="options">
+      <div class="score">
+        SCORE <span id="score">100</span> Lives <span id="lives">3</span>
+      </div>
+      <div class="pause"><img src="pause.png" alt="" /></div>
+    </div>
+   
+  </body>
+  <script src="../js/game.js" async></script>
+</html>
