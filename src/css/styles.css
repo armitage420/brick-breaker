@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Glitch';
-    src: url('../img/CFGlitch.ttf') format('truetype');
+    src: url('../fonts/CFGlitch.ttf');
 }
 
 body {
