@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build:dev": "webpack",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "setup": "chmod +x setup.sh && bash setup.sh"
   },
   "keywords": [],
   "author": "",
