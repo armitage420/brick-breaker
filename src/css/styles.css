@@ -1,54 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    min-height: 100%;
+@font-face {
+    font-family: 'Glitch';
+    src: url('../img/CFGlitch.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Glitch';
+    background: url(https://static.vecteezy.com/system/resources/previews/000/095/572/non_2x/vector-dark-wallpaper-design.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.head {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    color: #ebefff;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1.4fr 0.6fr;
+    gap: 0px 0px;
+}
+
+.title {
+    grid-area: 1 / 1 / 2 / 6;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 100px auto;
-    font-size: 3.5em;
-    color: #ffffff;
+    font-size: 96px;
 }
 
-.play-btn {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.5rem;
-    padding: 50px;
+.options {
+    grid-area: 4 / 1 / 5 / 6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.option-icon {
+    cursor: pointer;
+    margin: 20px;
+    height: 40px;
+    transition: 0.3s ease;
+}
+
+.option-icon:hover {
+    opacity: 0.7;
     height: 50px;
-    border-radius: 50%;
-    border: 1px solid #ffffff;
+    width: 50px
+}
+
+.play {
+    grid-area: 2 / 1 / 4 / 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 36px;
+}
+
+.play-button {
     cursor: pointer;
-    transition: all 0.1s ease;
-}
-
-.play-btn:hover {
-    padding: 70px;
-}
-
-img {
-    position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.5rem;
-    padding: 10px;
-    cursor: pointer;
-    transition: all 0.1s ease;
+    height: 200px;
+    padding: 50px;
+    width: 200px;
+    transition: 0.3s ease;
+    margin-bottom: -60px;
+    border-radius: 50%;
 }
 
-img :hover {
-    padding: 20px;
+.play-button:hover {
+    opacity: 0.7;
+    height: 250px;
+    width: 250px;
 }
