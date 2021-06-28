@@ -22,6 +22,13 @@
 <p>The user has to make sure the ball bounces off the paddle without going off the bottom of the screen. In our implementation, we want to make the paddle be based upon the position of an actual Ping-Pong paddle held by the user. The paddle moves as user moves his mouse cursor</p>
 <br>
 
+### Preview Deployed Game
+
+<p><a href="https://undefined-brickbreaker.netlify.app/">🎮 Play Game 🎮</a></p>
+
+<br>
+
+
 ## 🎮Game Panel
 
 <p align="center"><strong ><code>Landing Page</code></strong></p>
@@ -41,6 +48,8 @@
 ![bricks](./images/bricks.png)
 
 <br>
+
+
 
 ### 📍 Game Play
 
