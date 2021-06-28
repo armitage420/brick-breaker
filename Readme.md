@@ -1,4 +1,4 @@
-# Brick-breaker
+# Brick-breaker 🧱
 
 ## 👨🏻‍💻👩🏻‍💻 Introduction
 
